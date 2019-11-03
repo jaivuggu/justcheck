@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="4" name="Test3(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.testcases.ContactsTestPage">
+        <methods>
+          <include name="SetUp"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="selectSingleContactsTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testcases.ContactsTestPage -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="4" name="Test4(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="LogoTest"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->
